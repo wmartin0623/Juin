@@ -57,6 +57,7 @@ SETCOLOR(col_fun)
 USE
 SELECT &are_fun
 RETURN []
+*aqui modifique
 
 *Solicitud clave de acceso
 FUNCTION cripta01

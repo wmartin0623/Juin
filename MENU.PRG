@@ -1,9 +1,6 @@
 **********************************************************************
 *MENU PRINCIPAL DE CUALQUIR SISTEMA                                  *
 **********************************************************************
-
-
-
 #include "inkey.ch"
 #include "ORD.CH"
 DOSIDLE()
@@ -1322,6 +1319,8 @@ DO WHILE (b>47.AND.b<123).OR.b=0.OR.b=32.OR.(b>128.AND.b<169)
 ENDDO
 a=b
 RETURN
+
+*aqui modifique
 
 PROCEDURE ESCRIBE1
 SETCOLOR(tono_il)
