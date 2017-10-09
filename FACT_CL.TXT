@@ -1,0 +1,43 @@
+  if (fisc_local == 1)
+     tit2b("COMUNICANDOSE CON EL CONTROLADOR FISCAL. Espere un momento...")
+     fis_fact()
+     if (bandera = "ERROR1" .OR. nu_fac <= 0)
+        tit2b("ERROR EN IMPRESORA. LOS DATOS NO SE GUARDARAN. Pulse una tecla")
+        espera()
+        borra(23)
+        loop
+     endif
+  else
+     do while (file("\&carpfis.\&tempofi3."))
+        tit2("ннн existe: &carpfis.\&tempofi3. !!!")
+     enddo
+     borra(23)
+     &ejecfac()
+     do while (!file("\&respfis.\&respufi3."))
+        tit2("ннн no existe: &respfis.\&respufi3. !!!")
+     enddo
+     borra(23)
+     select 99
+     set exclusive on
+     use (spooltmp)
+     append from "\&respfis.\&respufi3." delimited all
+     goto bottom
+     skip -1
+     if (puerto_com == 1)
+        nu_fac:= Val(right(Trim(campo1), 8))
+     else
+        nu_fac:= Val(SubStr(campo1, 35, 8))
+     endif
+     set exclusive off
+     do while (file("\&respfis.\&respufi3."))
+        run "del \&respfis.\&respufi3."
+        tit2("ннн BORRANDO &respfis.\&respufi3. !!!")
+     enddo
+  endif
+  if (nu_fac <= 0 .OR. nu_fac = 100000)
+     tit2b("ERROR EN IMPRESORA. LOS DATOS NO SE GUARDARAN. Pulse una tecla")
+     espera()
+     borra(23)
+     loop
+  endif
+

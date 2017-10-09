@@ -1,0 +1,12 @@
+         s:= "]" + se + "3" + se + " "
+         enviar(s)
+         s:= "]" + se + "4" + se + " "
+         enviar(s)
+         s:= "]" + se + "11" + se + " "
+         enviar(s)
+         s:= "]" + se + "12" + se + " "
+         enviar(s)
+         s:= "]" + se + "13" + se + " "
+         enviar(s)
+         s:= "]" + se + "14" + se + " "
+         enviar(s)

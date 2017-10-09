@@ -1,0 +1,7 @@
+function F_TRANS
+
+   parameters n
+   m:= strtran(n, ".", "*")
+   m:= strtran(m, ",", ".")
+   m:= strtran(m, "*", ",")
+   return m

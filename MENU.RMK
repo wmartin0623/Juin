@@ -1,0 +1,22 @@
+menu.obj: MENU.PRG
+ CLIPPER MENU /M/USTD.CH
+
+// Regla General de Compilacion
+.prg.obj:
+ CLIPPER $< /Q/USTD.CH
+
+funcion.obj: funcion.prg
+maestros.obj: maestros.prg mae_abmc.prg maeayuda.prg  maepant.prg maemuest.prg \
+              maeproce.prg maeartic.prg maecpost.prg
+movartic.obj: movartic.prg movconsu.prg movmodpu.prg movpresu.prg
+movclien.obj: movclien.prg movactcl.prg movcopa1.prg movcofac.prg movpacli.prg \
+              movespcl.prg movconta.prg movNCGRc.prg movfaccl.prg movnccli.prg \
+              movbajpc.prg movasicl.prg
+listados.obj: listados.prg
+lisartic.obj: lisartic.prg lisartmc.prg
+lisclien.obj: lisclien.prg liscldom.prg lisclmay.prg lisivave.prg lismaycl.prg \
+              lismayct.prg lispencl.prg lisresum.prg lisvemes.prg liscccli.prg \
+              lisestad.prg list_fac.prg
+lisprove.obj: lisprove.prg
+utilidad.obj: utilidad.prg utiparam.prg utisalcl.prg
+

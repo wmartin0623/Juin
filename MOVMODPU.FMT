@@ -1,0 +1,19 @@
+* movmodpu.FMT
+SOMBRA(5,2,21,77,'H5',1,'',colo3)
+@ 6,3 SAY "ÚRango de RubrosÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿ÚRango ProveedoresÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿"
+@ 7,3 SAY "³Desde:                          ³³                                     ³"
+@ 8,3 SAY "³Hasta:                          ³³                                     ³"
+@ 9,3 SAY "ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ"
+@10,3 SAY "ÚRango MarcasÄÄÄÄÄÄÄÄ¿    ÚVariaci¢n P.UnitarioÄÄÄ¿    ÚAplicarÄÄÄÄÄÄÄÄÄ¿"
+@11,3 SAY "³Desde:              ³    ³ Porcentaje:           ³    ³ Sumando :      ³"
+@12,3 SAY "³Hasta:              ³    ³ Monto Fijo:           ³    ³ Restando:      ³"
+@13,3 SAY "ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ"
+@14,3 SAY "ÚAplicar a P.Unitario de:ÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿                                 "
+@15,3 SAY "³Cuenta Corriente:       Contado:      ³                                 "
+@16,3 SAY "ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                                 "
+SETCOLOR(color3)
+@20,20 SAY " ±Esc±-Sale  ±ÄÙ±-Ingresa "
+SETCOLOR(color7)
+DIST_COLOR(20,22,'~W+/R~Esc')
+DIST_COLOR(20,34,'~W+/R~ÄÙ')
+
